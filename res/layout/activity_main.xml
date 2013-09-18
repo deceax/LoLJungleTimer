@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/blue_buff_container1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50" >
+
+                        <ImageButton
+                            android:id="@+id/blue_buff1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:background="#00000000"
+                            android:contentDescription="@string/blue_buff"
+                            android:src="@drawable/blue_buff_1" />
+
+                        <TextView
+                            android:id="@+id/blue_buff_timer1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"/>                            
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blue_buff_container2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50" >
+
+                <ImageButton
+                    android:id="@+id/blue_buff2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:background="#00000000"
+                    android:contentDescription="@string/blue_buff"
+                    android:gravity="center"
+                    android:src="@drawable/blue_buff_2" />
+
+                <TextView
+                    android:id="@+id/blue_buff_timer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/red_buff_container1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                        <ImageButton
+                            android:id="@+id/red_buff1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitXY"
+                            android:background="#00000000"
+                            android:contentDescription="@string/red_buff"
+                            android:src="@drawable/red_buff_1" />
+
+                        <TextView
+                            android:id="@+id/red_buff_timer1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/red_buff_container2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" >
+
+                <ImageButton
+                    android:id="@+id/red_buff2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:background="#00000000"
+                    android:contentDescription="@string/red_buff"
+                    android:gravity="center"
+                    android:src="@drawable/red_buff_2" />
+
+                <TextView
+                    android:id="@+id/red_buff_timer2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/dragon_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <ImageButton
+                android:id="@+id/dragon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                android:contentDescription="@string/dragon"
+                android:src="@drawable/dragon" />
+
+            <TextView
+                android:id="@+id/dragon_timer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/baron_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" >
+
+                <ImageButton
+                    android:id="@+id/baron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+					android:scaleType="fitXY"
+					android:background="#00000000"
+                    android:contentDescription="@string/baron"
+                    android:gravity="center"
+                    android:src="@drawable/baron" />
+
+                <TextView
+                    android:id="@+id/baron_timer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"/>
+                    
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

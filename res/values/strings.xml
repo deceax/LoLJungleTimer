@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Jungle Timer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Jungle Timer</string>
+    <string name="blue_buff">Blue Buff</string>
+    <string name="red_buff">Red Buff</string>
+    <string name="dragon">Dragon</string>
+    <string name="baron">Baron</string>
+
+</resources>
